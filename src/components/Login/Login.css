@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+form input {
+  width: 300px;
+  margin-top: 20px;
+}
+.submit-btn{
+  background: green;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+}
+form h3 {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+.forget-link{
+  font-family: 'Montserrat', sans-serif;
+}
+.forget-link span {
+  font-weight: bold;
+}
+.google-logo img {
+  width: 45px;
+  background: wheat;
+  border-radius: 25px;
+  padding: 6px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
