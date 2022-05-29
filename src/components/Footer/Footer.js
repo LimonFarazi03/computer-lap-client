@@ -1,8 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import { BsFacebook, BsLinkedin, BsPinterest } from "react-icons/bs";
-import { AiFillInstagram } from "react-icons/ai";
-import logo from "../../Image/logo.png";
 
 const Footer = () => {
   const dynamicYear = new Date().getFullYear();

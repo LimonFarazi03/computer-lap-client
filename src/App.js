@@ -9,7 +9,8 @@ import Blogs from './components/Blogs/Blogs';
 import Login from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar';
 import Signup from './components/Signup/Signup';
- import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
