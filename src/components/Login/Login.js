@@ -2,7 +2,7 @@ import React from "react";
 import './Login.css';
 import googleLogo from '../../Image/google-logo.png';
 import { Link } from "react-router-dom";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useSignInWithEmailAndPassword,useSignInWithGoogle } from "react-firebase-hooks/auth";
 import auth from "../firebase.init";
 import { toast } from "react-toastify";
 
@@ -14,6 +14,7 @@ const Login = () => {
     error,
   ] = useSignInWithEmailAndPassword(auth);
 
+  const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
   const handleLogin = (event) =>{
     event.preventDefault();
     const email = event.target.email.value;
@@ -43,7 +44,7 @@ const Login = () => {
       <p className="my-2"><span><Link to="##">Forget password</Link></span></p>
     </div>
     <hr /> 
-    <div className="google-logo">
+    <div onClick={ ()=> signInWithGoogle()} className="google-logo">
     <img src={googleLogo} alt="" />
     </div>
   <div className="mt-3 forget-link text-center"><p>New in site <span><Link to="/signup">create an account</Link></span></p></div>

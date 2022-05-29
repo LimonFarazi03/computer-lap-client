@@ -1,9 +1,10 @@
 import React from 'react';
 import googleLogo from '../../Image/google-logo.png';
 import { Link } from "react-router-dom";
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword,useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
 import auth from '../firebase.init';
+import { sendEmailVerification } from 'firebase/auth';
 
 const Signup = () => {
   const [
@@ -12,6 +13,7 @@ const Signup = () => {
     loading,
     error,
   ] = useCreateUserWithEmailAndPassword(auth);
+  const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
   
   const handleSignup = (event) =>{
     event.preventDefault();
@@ -20,10 +22,13 @@ const Signup = () => {
     const confirmPassword = event.target.confirmPassword.value;
     
     if(password !== confirmPassword){
-      toast.warn('password and confirm passsword does not match')
-    }else{
-      toast.success('Successfully created account');
+      toast.warn('password and confirm password does not match')
+    }
+    else if (password === confirmPassword){
       createUserWithEmailAndPassword(email, password);
+      toast.success('account created successfully');
+    }else{
+      toast.warn('something went Wrong')
     }
   }
   return (
@@ -42,7 +47,7 @@ const Signup = () => {
       <p className="my-2"><span><Link to="##">Forget password</Link></span></p>
     </div>
     <hr /> 
-    <div className="google-logo">
+    <div onClick={ ()=> signInWithGoogle()} className="google-logo">
     <img src={googleLogo} alt="" />
     </div>
   <div className="mt-3 forget-link text-center"><p>Already Have an account <span><Link to="/login">Login</Link></span></p></div>
