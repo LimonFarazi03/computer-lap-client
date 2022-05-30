@@ -43,9 +43,6 @@ const Signup = () => {
         <input className="p-2" type="password" name='confirmPassword'  placeholder="Confirm Password"/>
     </div>
     <input className="submit-btn" type="submit" value='Login' />
-    <div className="forget-link">
-      <p className="my-2"><span><Link to="##">Forget password</Link></span></p>
-    </div>
     <hr /> 
     <div onClick={ ()=> signInWithGoogle()} className="google-logo">
     <img src={googleLogo} alt="" />
