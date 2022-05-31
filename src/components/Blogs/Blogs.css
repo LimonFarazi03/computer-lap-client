@@ -1,5 +1,6 @@
 .bg-clr{
   background: #F8F8F8;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .vsImage img{
   margin-right: 40px;
@@ -8,4 +9,13 @@
 .blog-text p {
   text-align: initial;
   margin-right: 20px;
+}
+.blogHeader{
+  text-transform: uppercase;
+    font-size: 34px;
+}
+.blogHeader::before{
+  width: 10px;
+  height: 10px;
+  border: red;
 }

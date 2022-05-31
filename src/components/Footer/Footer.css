@@ -1,3 +1,16 @@
 .background-clr{
   background-color: #011C39;
 }
+.svgIcon a {
+  text-decoration: none;
+  color: white;
+}
+.svgIcon a svg {
+  font-size: 40px;
+  background: red;
+  padding: 4px;
+  margin-left: 20px;
+}
+.svgIcon a svg:first-child {
+  margin: 0px 20px 0px 0px;
+}
