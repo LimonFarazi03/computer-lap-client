@@ -1,7 +1,8 @@
 import React from "react";
 import "./Footer.css";
 import footerImg from "../../Image/logo.png";
-import { AiFillFacebook } from "react-icons/ai";
+import { AiFillFacebook,AiFillLinkedin,AiFillInstagram } from "react-icons/ai";
+import { BsPinterest} from "react-icons/bs";
 
 const Footer = () => {
   const dynamicYear = new Date().getFullYear();
@@ -22,7 +23,7 @@ const Footer = () => {
             <div className="svgIcon">
               <a href="##">
                 {" "}
-                <AiFillFacebook />{" "}
+                <AiFillLinkedin />{" "}
               </a>
               <a href="##">
                 {" "}
@@ -30,11 +31,11 @@ const Footer = () => {
               </a>
               <a href="##">
                 {" "}
-                <AiFillFacebook />{" "}
+                <BsPinterest />{" "}
               </a>
               <a href="##">
                 {" "}
-                <AiFillFacebook />{" "}
+                <AiFillInstagram />{" "}
               </a>
             </div>
           </div>
@@ -73,7 +74,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* <p className='container text-center p-3'>© all rights reserved copyright abidislamabir@gmail.com</p> */}
+      <p className='container mt-4 text-center p-3'>© all rights reserved copyright {dynamicYear} abidislamabir@gmail.com</p>
     </div>
   );
 };
