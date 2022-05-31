@@ -1,6 +1,11 @@
 .bg-clr{
   background: #F8F8F8;
 }
-.vsImage{
-  width: 100px;
+.vsImage img{
+  margin-right: 40px;
+  width: 355px;
+}
+.blog-text p {
+  text-align: initial;
+  margin-right: 20px;
 }

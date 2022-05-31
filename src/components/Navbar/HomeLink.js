@@ -32,6 +32,9 @@ const HomeLink = () => {
           <Link className="nav-link" to="blogs">Blogs</Link>
         </li>
         <li className="nav-item">
+          <Link className="nav-link" to="about">AboutUs</Link>
+        </li>
+        <li className="nav-item">
           {user?<div className="logOutBtn" onClick={logout}><HiOutlineLogout/></div>:<Link className="nav-link login-custom" to="/login">Login</Link>}
         </li>
       </ul>
