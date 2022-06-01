@@ -12,7 +12,7 @@ const Blogs = () => {
         <div>
           <h3 className="text-center my-5 fw-bold blogHeader">Blogs</h3>
           <div className="vsImage bg-clr rounded p-5 my-5 d-flex">
-            <img src={vsImg} alt="" />
+            <img width={'100%'} src={vsImg} alt="" />
             <div className="vImgContainer">
               <h3>1. Difference between javascript and node js ?</h3>
               <div className="d-flex blog-text">
@@ -52,7 +52,7 @@ const Blogs = () => {
         </div>
         <div>
           <div className="vsImage bg-clr rounded p-5 my-5 d-flex">
-            <img src={vsImg2} alt="" />
+            <img width={'100%'} src={vsImg2} alt="" />
             <div className="vImgContainer">
               <h3>
                 2. When should we use node js and when should use mongodb ?
@@ -92,7 +92,7 @@ const Blogs = () => {
         </div>
         <div>
           <div className="vsImage bg-clr rounded p-5 my-5 d-flex">
-            <img src={vsImg3} alt="" />
+            <img width={'100%'} src={vsImg3} alt="" />
             <div className="vImgContainer">
               <h3>3. Difference between sql and nosql ?</h3>
               <p className="my-3">
@@ -127,7 +127,7 @@ const Blogs = () => {
         </div>
         <div>
           <div className="vsImage bg-clr rounded p-5 my-5 d-flex">
-            <img src={vsImg4} alt="" />
+            <img width={'100%'} src={vsImg4} alt="" />
             <div className="vImgContainer">
               <h3>4. What is the purpose of JWT and how does it work ?</h3>
               <div className="d-flex blog-text">

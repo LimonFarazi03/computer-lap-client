@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="row text-md-left">
           <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <div className="footerImg">
-              <img src={footerImg} alt="" />
+              <img width={'100%'} src={footerImg} alt="" />
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
