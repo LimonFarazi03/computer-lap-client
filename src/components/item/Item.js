@@ -1,15 +1,25 @@
 import React from "react";
-import './Item.css';
+import "./Item.css";
+import { FaDollarSign } from 'react-icons/fa';
+import { MdProductionQuantityLimits } from 'react-icons/md';
+import { ImUserTie } from 'react-icons/im';
 
 const Item = ({ product }) => {
   return (
     <div className="col-12 col-md-3">
-      <div className='p-3 rounded-3 bg-custom'>
-      <img src={product.img} alt="" />
-      <div className="product-body">
-        <p className="fw-bold">{product.description}</p>
-        <p className="fw-bold text-primary">{product.brand}</p>
-      </div>
+      <div className="p-3 rounded-3 bg-custom">
+        <img width={'100%'} src={product.img} alt="" />
+        <div className="product-body">
+          <h4 className="fw-bold">{product.name.slice(0, 16)}</h4>
+          <p>{product.description.slice(0, 66)}</p>
+          <div className='my-3 color-custom custom-user'><ImUserTie/> {product.supplier}</div>
+          <div className='d-flex justify-content-between'>
+            <p className="fw-bold">{product.brand}</p>
+            <p className="fw-bold clr-custom"><MdProductionQuantityLimits/> {product.quantity}</p>
+            <p className="fw-bold size-custom clr-custom"><FaDollarSign/> {product.price}</p>
+          </div>
+          <div width={'100%'} className='btn btn-warning'>Update Now</div>
+        </div>
       </div>
     </div>
   );

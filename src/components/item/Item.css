@@ -1,3 +1,18 @@
 .bg-custom{
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+.clr-custom{
+  color:#EF4A23;
+}
+.size-custom {
+    font-size: 21px !important;
+}
+.color-custom {
+  color: gray;
+  font-size: 16px;
+}
+.custom-user svg {
+  border-radius: 30px;
+  margin-right: 8px;
+  font-size: 20px;
+}
