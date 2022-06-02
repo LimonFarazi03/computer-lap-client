@@ -10,12 +10,14 @@ import Signup from './components/Signup/Signup';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import HomeLink from './components/Navbar/HomeLink';
+import Items from './components/Items/Items';
 
 
 function App() {
   return (
     <div>
     <HomeLink />
+    <Items/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />

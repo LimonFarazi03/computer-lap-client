@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import auth from '../firebase.init';
 import './HomeLink.css';
 import { HiOutlineLogout } from 'react-icons/hi';
+import logo from '../../Image/logo.png';
 
 const HomeLink = () => {
   const [user, loading, error] = useAuthState(auth);
@@ -19,7 +20,9 @@ const HomeLink = () => {
     <div>
       <nav className="fixed-top navbar navbar-expand-lg navbar-light bg-light">
   <div className="container">
-    <Link className="navbar-brand" to="/">Navbar</Link>
+    <Link className="navbar-brand" to="/">
+    <img width={'96px'} src={logo} alt="" />
+    </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
