@@ -3,6 +3,7 @@ import "./Item.css";
 import { FaDollarSign } from 'react-icons/fa';
 import { MdProductionQuantityLimits } from 'react-icons/md';
 import { ImUserTie } from 'react-icons/im';
+import { GrUpdate } from 'react-icons/gr';
 
 const Item = ({ product }) => {
   return (
@@ -18,7 +19,8 @@ const Item = ({ product }) => {
             <p className="fw-bold clr-custom"><MdProductionQuantityLimits/> {product.quantity}</p>
             <p className="fw-bold size-custom clr-custom"><FaDollarSign/> {product.price}</p>
           </div>
-          <div width={'100%'} className='btn btn-warning'>Update Now</div>
+          <hr />
+          <div className='update-btn fw-bold my-3'><GrUpdate/> Update Now</div>
         </div>
       </div>
     </div>

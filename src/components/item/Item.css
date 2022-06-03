@@ -16,3 +16,20 @@
   margin-right: 8px;
   font-size: 20px;
 }
+.update-btn {
+  cursor: pointer;
+  background: #EAECF8;
+  padding: 10px;
+  color: #3749BB;
+  transition: .5s;
+  text-align: center;
+  border-radius: 10px;
+}
+.update-btn svg{
+  font-size: 18px;
+    margin-right: 5px;
+}
+.update-btn:hover{
+background: #3749BB;
+color: white;
+}

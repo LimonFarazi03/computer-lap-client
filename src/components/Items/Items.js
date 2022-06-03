@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Item from '../item/Item';
+import './Items.css';
 
 const Items = () => {
   const [products,setProducts] = useState([]);
@@ -11,7 +12,7 @@ const Items = () => {
     .then(data => setProducts(data))
   },[]);
   return (
-    <div className='container'>
+    <div className=' container'>
       <div className='row gy-5'>
         {
         products.map(product => <Item
