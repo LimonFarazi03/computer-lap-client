@@ -32,6 +32,9 @@ const HomeLink = () => {
           <Link className="nav-link active" aria-current="page" to="home">Home</Link>
         </li>
         <li className="nav-item">
+          <Link className="nav-link" to="blogs">ManageItems</Link>
+        </li>
+        <li className="nav-item">
           <Link className="nav-link" to="blogs">Blogs</Link>
         </li>
         <li className="nav-item">

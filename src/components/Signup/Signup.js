@@ -32,7 +32,7 @@ const Signup = () => {
     }
   }
   return (
-    <div className="d-flex justify-content-center align-items-center my-5">
+    <div className="d-flex custom-margin justify-content-center align-items-center my-5">
       <form onSubmit={handleSignup}> 
       <h3 className="text-center my-3">Signup</h3>
     <div className="form-group">

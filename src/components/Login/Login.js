@@ -26,8 +26,7 @@ const Login = () => {
       toast.error(error.message)
     }
 
-  }
-
+  };
   return (
     <div className="d-flex custom-margin justify-content-center align-items-center my-5">
       <form onSubmit={handleLogin}>
