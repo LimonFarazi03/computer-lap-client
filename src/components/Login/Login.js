@@ -29,7 +29,7 @@ const Login = () => {
   }
 
   return (
-    <div className="d-flex justify-content-center align-items-center my-5">
+    <div className="d-flex custom-margin justify-content-center align-items-center my-5">
       <form onSubmit={handleLogin}>
       <h3 className="text-center my-3">Login</h3>
     <div className="form-group">

@@ -7,22 +7,22 @@ import Footer from './components/Footer/Footer';
 import Blogs from './components/Blogs/Blogs';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import HomeLink from './components/Navbar/HomeLink';
-import Items from './components/Items/Items';
+import ProductDetails from './components/ProductDetails/ProductDetails';
 
 
 function App() {
   return (
     <div>
     <HomeLink />
-    <Items/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/productDetails/:id" element={<ProductDetails />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
