@@ -1,0 +1,13 @@
+.details img{
+  margin-right:10px;
+}
+.custom-height{
+  line-height: 10px;
+}
+.delete-btn{
+  background: #f17a7a;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 35px;
+  margin-right: 20px;
+}

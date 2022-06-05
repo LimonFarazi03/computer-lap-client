@@ -11,6 +11,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import HomeLink from './components/Navbar/HomeLink';
 import ProductDetails from './components/ProductDetails/ProductDetails';
+import ManageItems from './components/ManageItems/ManageItems';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/productDetails/:id" element={<ProductDetails />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/manageItems" element={<ManageItems />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
