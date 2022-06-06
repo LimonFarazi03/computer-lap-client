@@ -1,12 +1,13 @@
 import React from "react";
 import './Login.css';
 import googleLogo from '../../Image/google-logo.png';
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuthState, useSignInWithEmailAndPassword,useSignInWithGoogle } from "react-firebase-hooks/auth";
 import auth from "../firebase.init";
 import { toast } from "react-toastify";
 
 const Login = () => {
+
   const [
     signInWithEmailAndPassword,
     user,
@@ -21,7 +22,6 @@ const Login = () => {
     const email = event.target.email.value;
     const password = event.target.password.value;
     signInWithEmailAndPassword(email,password);
-
     if(error){
       toast.error(error.message)
     }
