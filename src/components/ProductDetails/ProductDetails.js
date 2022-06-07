@@ -17,6 +17,9 @@ const ProductDetails = () => {
     <div className="container p-4 custom-margin">
       <div className="custom-shadow rounded-2 p-4">
         <div className="row">
+          <div className="col-12 col-md-6 text-center details-img">
+            <img width={'75%'} src={product.img} alt="" />
+          </div>
           <div className="col-12 col-md-6 details">
             <h3 className="text-start fw-bold mt-3 ">{product.name}</h3>
             <p className="fw-bold my-4">{product.description}</p>
@@ -27,9 +30,8 @@ const ProductDetails = () => {
             <h3 className="fw-bold clr-custom">
               <MdProductionQuantityLimits /> {product.quantity}
             </h3>
-          </div>
-          <div className="col-12 col-md-6 text-center details-img">
-            <img width={'80%'} src={product.img} alt="" />
+            <button className="deliveredBtn">Delivered</button>
+            <button className="deliveredBtn">Add Quantity</button>
           </div>
         </div>
       </div>

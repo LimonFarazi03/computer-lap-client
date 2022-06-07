@@ -17,8 +17,8 @@ const Item = ({ product }) => {
       <div className="p-3 rounded-3 bg-custom">
         <img width={'100%'} src={product.img} alt="" />
         <div className="product-body">
-          <h4 className="fw-bold">{product.name.slice(0, 17)}</h4>
-          <p className="text-gray">{product.description.slice(0, 66)}</p>
+          <h4 className="fw-bold">{product.name?.slice(0, 17)}</h4>
+          <p className="text-gray">{product.description?.slice(0, 66)}</p>
           <div className='my-3 color-custom custom-user'><ImUserTie/> {product.supplier}</div>
           <div className='d-flex justify-content-between'>
             <p className="fw-bold">{product.brand}</p>

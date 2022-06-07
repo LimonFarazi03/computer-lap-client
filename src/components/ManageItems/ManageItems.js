@@ -11,8 +11,12 @@ const ManageItems = () => {
     .then(res => res.json())
     .then(data => setProducts(data))
   },[]);
+  const handleAddItems = () =>{
+console.log('iam adding')
+  }
   return (
     <div className='container custom-margin'>
+    <button onClick={handleAddItems} className='addMoreBtn'>Add new items</button>
       <div className='row gy-3'>
         {
         products.map(product => <ManageItem key={product._id} product={product}/>)

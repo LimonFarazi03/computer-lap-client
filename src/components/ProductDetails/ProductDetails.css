@@ -4,3 +4,17 @@
 .custom-shadow-sec{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
+.deliveredBtn {
+    border: none;
+    outline: none;
+    padding: 8px 18px;
+    background: #EF4A23;
+    border-radius: 6px;
+    color: white;
+    margin:20px 0px;
+    transition: .5s;
+    margin-right: 16px;
+}
+.deliveredBtn:hover{
+  background: #c3634d;
+}

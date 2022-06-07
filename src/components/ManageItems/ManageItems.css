@@ -1,0 +1,8 @@
+.addMoreBtn{
+  border: none;
+  margin: 20px 0px;
+  background: green;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
