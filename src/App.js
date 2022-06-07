@@ -13,6 +13,7 @@ import HomeLink from "./components/Navbar/HomeLink";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import ManageItems from "./components/ManageItems/ManageItems";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
+import AddItem from "./components/AddItem/AddItem";
 
 function App() {
   return (
@@ -41,6 +42,12 @@ function App() {
           }
         />
         <Route path="/about" element={<About />} />
+        <Route path="/addItem" element={
+          <RequireAuth>
+        <AddItem/>
+        </RequireAuth>
+        }
+         />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

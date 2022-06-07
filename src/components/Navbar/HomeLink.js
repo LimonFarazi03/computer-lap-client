@@ -35,7 +35,7 @@ const HomeLink = () => {
           {user && <Link className="nav-link" to="manageItems">ManageItems</Link>}
         </li>
         <li className="nav-item">
-          {user && <Link className="nav-link" to="manageItems">AddItems</Link>}
+          {user && <Link className="nav-link" to="addItem">AddItem</Link>}
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="blogs">Blogs</Link>

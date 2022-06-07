@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import ManageItem from '../ManageItem/ManageItem';
 import './ManageItems.css';
 
@@ -16,7 +17,7 @@ console.log('iam adding')
   }
   return (
     <div className='container custom-margin'>
-    <button onClick={handleAddItems} className='addMoreBtn'>Add new items</button>
+    <Link to='/addItem'><button onClick={handleAddItems} className='addMoreBtn'>Add new items</button></Link>
       <div className='row gy-3'>
         {
         products.map(product => <ManageItem key={product._id} product={product}/>)
