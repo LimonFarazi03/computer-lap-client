@@ -12,7 +12,8 @@ const AddItem = () => {
     const brand = event.target.brand.value;
     const price = event.target.price.value;
     const quantity = event.target.quantity.value;
-    const imgLink = event.target.imgLink.value;
+    const img = event.target.img.value;
+    
     const url = "https://whispering-dawn-95349.herokuapp.com/item";
     fetch(url, {
       method: "POST",
@@ -23,7 +24,7 @@ const AddItem = () => {
         brand,
         price,
         quantity,
-        imgLink,
+        img,
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -81,7 +82,7 @@ const AddItem = () => {
           placeholder="Quantity"
         />
         <input
-          name="imgLink"
+          name="img"
           type="text"
           className="form-control"
           placeholder="Image Link must be host on imgBB (280*280)"
