@@ -20,7 +20,6 @@ const ManageItem = ({ product }) => {
         });
     }
     
-
   };
   return (
     <div className="custom-shadow rounded-3 p-2">

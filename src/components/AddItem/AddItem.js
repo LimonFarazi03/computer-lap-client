@@ -32,12 +32,10 @@ const AddItem = () => {
     })
       .then((response) => response.json())
       .then((json) => {
-        console.log(json)
+        console.log(json);
+        toast.success('Product Upload successfully');
       });
   };
-  const handleToast = () =>{
-    toast.success('Product Upload successfully')
-  }
 
   return (
     <div className="container custom-margin">
@@ -87,7 +85,7 @@ const AddItem = () => {
           className="form-control"
           placeholder="Image Link must be host on imgBB (280*280)"
         />
-        <button onClick={handleToast} className="btn btn-success upload-btn">
+        <button className="btn btn-success upload-btn">
           <MdCloudUpload /> Upload
         </button>
       </form>
