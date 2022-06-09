@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+.bannerImg img {
+  width: 490px;
+}
+.bg-color{
+  background:#E8E8E8 ;
+}
+.bannerDetails h1{
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+}
+.bannerDetails h2{
+  font-family: 'Lobster', cursive;
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+.exploreNowBtn{
+  border: none;
+  font-weight: bold;
+  background: rgb(1, 117, 1);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 15px;
+}

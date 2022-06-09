@@ -16,7 +16,7 @@ const Items = () => {
       .then((data) => setProducts(data));
   }, []);
   return (
-    <div className="container custom-margin">
+    <div className="container">
       <div className="row gy-5">
         {products.map((product) => (
           <Item key={product._id} product={product}></Item>
