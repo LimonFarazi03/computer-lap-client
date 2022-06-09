@@ -22,7 +22,7 @@ const ProductDetails = () => {
           </div>
           <div className="col-12 col-md-6 details">
             <h3 className="text-start fw-bold mt-3 ">{product.name}</h3>
-            <p className="fw-bold my-4">{product.description}</p>
+            <p className="my-4">{product.description?.slice(0,310)}</p>
             <p className="my-3 color-custom custom-user">
               <ImUserTie /> {product.supplier}
             </p>
