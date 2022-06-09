@@ -8,7 +8,7 @@ const Items = () => {
   // console.log(products);
   const url = "https://whispering-dawn-95349.herokuapp.com/items";
   if (products.length) {
-    products.length = 6;
+    products.length = 4;
   }
   useEffect(() => {
     fetch(url)

@@ -6,8 +6,8 @@ import { toast } from "react-toastify";
 const AddItem = () => {
   const handleUpload = (event) => {
     event.preventDefault();
-    const name = event.target.sellerName.value;
-    const productName = event.target.productName.value;
+    const supplier = event.target.supplier.value;
+    const name = event.target.name.value;
     const description = event.target.description.value;
     const brand = event.target.brand.value;
     const price = event.target.price.value;
@@ -18,8 +18,8 @@ const AddItem = () => {
     fetch(url, {
       method: "POST",
       body: JSON.stringify({
+        supplier,
         name,
-        productName,
         description,
         brand,
         price,
@@ -44,13 +44,13 @@ const AddItem = () => {
       </h3>
       <form onSubmit={handleUpload} className="row g-3 w-75 p-2 mx-auto">
         <input
-          name="sellerName"
+          name="supplier"
           type="text"
           className="form-control"
           placeholder="Your Name/ Seller Name"
         />
         <input
-          name="productName"
+          name="name"
           type="text"
           className="form-control"
           placeholder="Product Name"

@@ -18,3 +18,9 @@
 .deliveredBtn:hover{
   background: #c3634d;
 }
+.details-img img{
+  transition: .5s;
+}
+.details-img:hover img{
+  transform:scale(1.1);
+}

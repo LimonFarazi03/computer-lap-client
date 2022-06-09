@@ -2,7 +2,7 @@ nav{
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .login-custom{
-  background: red;
+  background:#0081CF;
   color:white;
   border-radius: 15px;
   cursor: pointer;
@@ -16,9 +16,10 @@ nav{
   cursor:pointer;
 }
 .logOutBtn svg{
-    font-size: 30px;
-    background: red;
-    margin: 6px 0px 0px 0px;
-    padding: 4px;
-    border-radius: 15px;
+  font-size: 34px;
+  background: #e4e4e4;
+  margin: 6px 0px 0px 0px;
+  padding: 6px;
+  border-radius: 15px;
+  color: black;
 }
