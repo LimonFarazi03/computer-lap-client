@@ -8,6 +8,7 @@ const Home = () => {
     <div className='custom-margin'>
       <Banner />
       <Items />
+      <Banner />
     </div>
   );
 };

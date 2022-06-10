@@ -13,28 +13,44 @@ const AddItem = () => {
     const price = event.target.price.value;
     const quantity = event.target.quantity.value;
     const img = event.target.img.value;
-    
-    const url = "https://whispering-dawn-95349.herokuapp.com/item";
-    fetch(url, {
-      method: "POST",
-      body: JSON.stringify({
-        supplier,
-        name,
-        description,
-        brand,
-        price,
-        quantity,
-        img,
-      }),
-      headers: {
-        "Content-type": "application/json; charset=UTF-8",
-      },
-    })
-      .then((response) => response.json())
-      .then((json) => {
-        console.log(json);
-        toast.success('Product Upload successfully');
-      });
+
+    if(supplier === ''){
+      toast.warn('Please Fill up the supplier name field')
+    }else if(name === ''){
+      toast.warn('Please Fill up the Product name field')
+    }else if(description === ''){
+      toast.warn('Please Fill up the description field')
+    }else if(brand === ''){
+      toast.warn('Please Fill up the Brand name field')
+    }else if(price === ''){
+      toast.warn('Please Fill up the price field')
+    }else if(quantity === ''){
+      toast.warn('Please Fill up the quantity field')
+    }else if(img === ''){
+      toast.warn('Set image link')
+    }else { 
+      const url = "https://whispering-dawn-95349.herokuapp.com/item";
+      fetch(url, {
+        method: "POST",
+        body: JSON.stringify({
+          supplier,
+          name,
+          description,
+          brand,
+          price,
+          quantity,
+          img,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((response) => response.json())
+        .then((json) => {
+          console.log(json);
+          toast.success("Product Upload successfully");
+        });
+    }
   };
 
   return (
