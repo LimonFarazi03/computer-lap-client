@@ -24,3 +24,6 @@
 .details-img:hover img{
   transform:scale(1.1);
 }
+.marginPrice h3 {
+  margin-right: 40px;
+}

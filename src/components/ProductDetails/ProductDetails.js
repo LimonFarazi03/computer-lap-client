@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaDollarSign } from "react-icons/fa";
 import { ImUserTie } from "react-icons/im";
 import { MdProductionQuantityLimits } from "react-icons/md";
 import { useParams } from "react-router-dom";
@@ -27,9 +28,14 @@ const ProductDetails = () => {
               <ImUserTie /> {product.supplier}
             </p>
             <p className="fw-bold">{product.brand}</p>
-            <h3 className="fw-bold clr-custom">
+            <div className="d-flex marginPrice">
+              <h3 className="fw-bold clr-custom">
               <MdProductionQuantityLimits /> {product.quantity}
             </h3>
+            <p className="fw-bold clr-custom size-custom">
+              <FaDollarSign/> {product.price}
+              </p>
+            </div>
             <button className="deliveredBtn">Delivered</button>
             <button className="deliveredBtn">Add Quantity</button>
           </div>

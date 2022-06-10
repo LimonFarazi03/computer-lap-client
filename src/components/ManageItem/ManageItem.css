@@ -24,3 +24,6 @@
 .imgHover:hover img{
   transform:scale(1.1);
 }
+.marginRight p {
+    margin-right: 12px;
+}
