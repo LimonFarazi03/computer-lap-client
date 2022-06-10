@@ -71,7 +71,7 @@ const HomeLink = () => {
                     <HiOutlineLogout />
                   </div>
                 ) : (
-                  <Link className="nav-link login-custom" to="/login">
+                  <Link className="nav-link rounded-pill login-custom" to="/login">
                     Login
                   </Link>
                 )}
