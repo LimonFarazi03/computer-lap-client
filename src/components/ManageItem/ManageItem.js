@@ -7,7 +7,8 @@ import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { FaDollarSign } from "react-icons/fa";
 
-const ManageItem = ({ product }) => {
+const ManageItem = (props) => {
+  const {product,isLoading,setIsloading} = props;
   const handleDelete = () => {
     const url = `https://whispering-dawn-95349.herokuapp.com/item/${product._id}`;
     const confirm = window.confirm("Confirm delete");
@@ -19,6 +20,7 @@ const ManageItem = ({ product }) => {
         .then((json) => {
           console.log(json);
           toast.success("Successfully deleted");
+          setIsloading(!isLoading)
         });
     }
   };
