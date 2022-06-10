@@ -4,7 +4,7 @@ import seBannerImg from "../../Image/secBanner.png";
 
 const SeBanner = () => {
   return (
-    <div className="bg-color mt-3">
+    <div className="bg-colors mt-3">
       <div className="container">
         <div className="row d-flex p-2 justify-content-center align-items-center">
           <div className="col-12 col-md-6">
